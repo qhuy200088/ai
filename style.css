@@ -1,7 +1,9 @@
+/* style.css */
+
 /* Phông chữ và thiết lập cơ bản */
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #f0f2f5; /* Nền xám nhạt của Messenger */
+    background-color: #f0f2f5; 
     margin: 0;
     display: flex;
     justify-content: center;
@@ -13,21 +15,21 @@ body {
 /* Container chính cho toàn bộ giao diện chat */
 .chat-container {
     width: 100%;
-    max-width: 600px; /* Chiều rộng giống cửa sổ chat */
-    height: 90vh; /* Chiều cao gần như toàn màn hình */
+    max-width: 600px; 
+    height: 90vh; 
     background-color: #fff;
-    border-radius: 15px; /* Bo góc mềm mại */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+    border-radius: 15px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
     display: flex;
     flex-direction: column;
-    overflow: hidden; /* Quan trọng để vùng chat cuộn đúng */
+    overflow: hidden;
 }
 
 /* Vùng Lịch Sử Tin Nhắn */
 .chat-history {
-    flex-grow: 1; /* Chiếm hết không gian có thể */
+    flex-grow: 1; 
     padding: 20px;
-    overflow-y: auto; /* Tạo thanh cuộn */
+    overflow-y: auto; 
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -36,7 +38,7 @@ body {
 /* Tin nhắn chung */
 .message {
     display: flex;
-    max-width: 80%; /* Giới hạn chiều rộng bong bóng */
+    max-width: 80%; 
 }
 
 /* Bong bóng tin nhắn AI (Trái) */
@@ -45,21 +47,21 @@ body {
 }
 
 .ai-message .message-bubble {
-    background-color: #e4e6eb; /* Màu xám của tin nhắn đến */
+    background-color: #e4e6eb; 
     color: #000;
-    border-radius: 18px 18px 18px 5px; /* Bo góc kiểu Messenger */
+    border-radius: 18px 18px 18px 5px; 
 }
 
 /* Bong bóng tin nhắn Người dùng (Phải) */
 .user-message {
     justify-content: flex-end;
-    margin-left: auto; /* Đẩy bong bóng sang phải */
+    margin-left: auto; 
 }
 
 .user-message .message-bubble {
-    background-color: #0084ff; /* Màu xanh của tin nhắn đi */
+    background-color: #0084ff; 
     color: white;
-    border-radius: 18px 18px 5px 18px; /* Bo góc kiểu Messenger */
+    border-radius: 18px 18px 5px 18px; 
 }
 
 /* Style cho bong bóng */
@@ -67,6 +69,8 @@ body {
     padding: 10px 15px;
     line-height: 1.4;
     font-size: 1em;
+    /* Hiệu ứng bo góc nhẹ nhàng như Win 11/Messenger */
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); 
 }
 
 /* Vùng Nhập Liệu */
@@ -83,10 +87,10 @@ body {
     flex-grow: 1;
     padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 20px; /* Bo tròn hoàn toàn */
+    border-radius: 20px; 
     margin-right: 10px;
     font-family: 'Inter', sans-serif;
-    resize: none; /* Không cho phép thay đổi kích thước */
+    resize: none; 
     outline: none;
     transition: border-color 0.2s;
 }
@@ -99,10 +103,10 @@ body {
 .input-area button {
     background-color: transparent;
     border: none;
-    color: #0084ff; /* Icon màu xanh */
+    color: #0084ff; 
     cursor: pointer;
     padding: 8px;
-    border-radius: 50%; /* Nút tròn */
+    border-radius: 50%; 
     transition: background-color 0.2s;
 }
 
