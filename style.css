@@ -1,0 +1,111 @@
+/* Phông chữ và thiết lập cơ bản */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f2f5; /* Nền xám nhạt của Messenger */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Container chính cho toàn bộ giao diện chat */
+.chat-container {
+    width: 100%;
+    max-width: 600px; /* Chiều rộng giống cửa sổ chat */
+    height: 90vh; /* Chiều cao gần như toàn màn hình */
+    background-color: #fff;
+    border-radius: 15px; /* Bo góc mềm mại */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Quan trọng để vùng chat cuộn đúng */
+}
+
+/* Vùng Lịch Sử Tin Nhắn */
+.chat-history {
+    flex-grow: 1; /* Chiếm hết không gian có thể */
+    padding: 20px;
+    overflow-y: auto; /* Tạo thanh cuộn */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Tin nhắn chung */
+.message {
+    display: flex;
+    max-width: 80%; /* Giới hạn chiều rộng bong bóng */
+}
+
+/* Bong bóng tin nhắn AI (Trái) */
+.ai-message {
+    justify-content: flex-start;
+}
+
+.ai-message .message-bubble {
+    background-color: #e4e6eb; /* Màu xám của tin nhắn đến */
+    color: #000;
+    border-radius: 18px 18px 18px 5px; /* Bo góc kiểu Messenger */
+}
+
+/* Bong bóng tin nhắn Người dùng (Phải) */
+.user-message {
+    justify-content: flex-end;
+    margin-left: auto; /* Đẩy bong bóng sang phải */
+}
+
+.user-message .message-bubble {
+    background-color: #0084ff; /* Màu xanh của tin nhắn đi */
+    color: white;
+    border-radius: 18px 18px 5px 18px; /* Bo góc kiểu Messenger */
+}
+
+/* Style cho bong bóng */
+.message-bubble {
+    padding: 10px 15px;
+    line-height: 1.4;
+    font-size: 1em;
+}
+
+/* Vùng Nhập Liệu */
+.input-area {
+    display: flex;
+    padding: 10px 15px;
+    border-top: 1px solid #f0f0f0;
+    background-color: #fff;
+    align-items: center;
+}
+
+/* Ô Textarea */
+.input-area textarea {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px; /* Bo tròn hoàn toàn */
+    margin-right: 10px;
+    font-family: 'Inter', sans-serif;
+    resize: none; /* Không cho phép thay đổi kích thước */
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input-area textarea:focus {
+    border-color: #0084ff;
+}
+
+/* Nút Gửi */
+.input-area button {
+    background-color: transparent;
+    border: none;
+    color: #0084ff; /* Icon màu xanh */
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%; /* Nút tròn */
+    transition: background-color 0.2s;
+}
+
+.input-area button:hover {
+    background-color: #f0f0f0;
+}
