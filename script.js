@@ -2,7 +2,7 @@
 // Đặt Khóa API CÔNG KHAI ở đây.
 const GEMINI_API_KEY = "ĐẶT_KHÓA_API_CỦA_BẠN_VÀO_ĐÂY"; // Thay thế bằng Khóa API của bạn
 
-const ai = new GenAI({ apiKey: GEMINI_API_KEY });
+const ai = new GenAI({ apiKey:AIzaSyDf0EuCmNTvfB0dyOHF6dZIr9gQPRp6THs});
 const model = "gemini-2.5-flash";
 const chatHistoryElement = document.getElementById('chatHistory');
 const promptInput = document.getElementById('promptInput');
