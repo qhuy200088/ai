@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Trợ Lý AI Hyu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@google/genai@latest/dist/index.min.js"></script>
+</head>
+<body>
+    <div class="chat-container">
+        <div id="chatHistory" class="chat-history">
+            <div class="message ai-message">
+                <div class="message-bubble">Chào bạn! Tôi là Hyu Toom. Bạn muốn trò chuyện về điều gì hôm nay?</div>
+            </div>
+            </div>
+
+        <div class="input-area">
+            <textarea id="promptInput" placeholder="Nhập tin nhắn..." rows="1"></textarea>
+            <button onclick="sendMessage()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
