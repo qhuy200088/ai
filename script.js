@@ -1,9 +1,9 @@
 // CẢNH BÁO: RỦI RO BẢO MẬT CAO - Khóa API được đặt công khai
 // VUI LÒNG DÙNG TÀI KHOẢN PHỤ VÀ THU HỒI KHÓA NẾU BỊ LỘ.
-const GEMINI_API_KEY = "ĐẶT_KHÓA_API_CỦA_BẠN_VÀO_ĐÂY"; // <<< THAY THẾ KHÓA API THỰC TẾ CỦA BẠN >>>
+const GEMINI_API_KEY = "AIzaSyDf0EuCmNTvfB0dyOHF6dZIr9gQPRp6THs"; // <<< THAY THẾ KHÓA API THỰC TẾ CỦA BẠN >>>
 
 // Khởi tạo Client và Model
-const ai = new GenAI({ apiKey:AIzaSyDf0EuCmNTvfB0dyOHF6dZIr9gQPRp6THs});
+const ai = new GenAI({ apiKey: GEMINI_API_KEY });
 const model = "gemini-2.5-flash";
 
 // Khởi tạo biến để lưu trữ lịch sử trò chuyện (Conversation History)
